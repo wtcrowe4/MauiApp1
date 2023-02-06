@@ -8,10 +8,12 @@
             <Label Text="Welcome to Maui Page 1!!!"
                    HorizontalOptions="Center"
                    TextColor="Purple"
-                   VerticalOptions="Center"
+                   VerticalOptions="Start"
                    TextDecorations="Underline"
                    FontSize="Large"
                    />
+
+            
         </Grid>
     </ContentPage.Content>
 </ContentPage>

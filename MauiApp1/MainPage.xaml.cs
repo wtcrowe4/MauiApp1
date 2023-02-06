@@ -25,5 +25,12 @@ public partial class MainPage : ContentPage
 	{
 		DisplayAlert("Whats up", "lorem ipsum", "Back");
 	}
+
+	private async void InternetClick(object sender, EventArgs e)
+	{
+		var hasInternet = Connectivity.NetworkAccess == NetworkAccess.Internet;
+
+		await DisplayAlert("Internet?", $"{hasInternet}", "OK");
+	}
 }
 

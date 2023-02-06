@@ -10,13 +10,13 @@
             VerticalOptions="Center">
 
             <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                Source="personalphoto.jpg"
+                SemanticProperties.Description="Personal Photo"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Hello, World!"
+                Text="Welcome"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
@@ -40,7 +40,13 @@
                 Text="Pop up"
                 Clicked="PopUpClick" 
                 HorizontalOptions="Center" />
-            
+
+            <Button
+                x:Name="CheckInternetBtn"
+                Text="Check Internet"
+                Clicked="InternetClick" 
+                HorizontalOptions="Center" />
+
         </VerticalStackLayout>
     </ScrollView>
 
