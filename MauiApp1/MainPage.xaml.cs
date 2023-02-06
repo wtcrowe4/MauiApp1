@@ -11,7 +11,7 @@ public partial class MainPage : ContentPage
 
 	private void OnCounterClicked(object sender, EventArgs e)
 	{
-		count++;
+		count += 3;
 
 		if (count == 1)
 			CounterBtn.Text = $"Clicked {count} time";
@@ -19,6 +19,11 @@ public partial class MainPage : ContentPage
 			CounterBtn.Text = $"Clicked {count} times";
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
+	}
+
+	private void PopUpClick(object sender, EventArgs e)
+	{
+		DisplayAlert("Whats up", "lorem ipsum", "Back");
 	}
 }
 

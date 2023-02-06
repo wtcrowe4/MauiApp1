@@ -35,6 +35,12 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
+            <Button
+                x:Name="PopupBtn"
+                Text="Pop up"
+                Clicked="PopUpClick" 
+                HorizontalOptions="Center" />
+            
         </VerticalStackLayout>
     </ScrollView>
 
